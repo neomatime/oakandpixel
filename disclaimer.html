@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website Disclaimer — Oak & Pixel</title>
+  <meta name="description" content="Oak & Pixel Website Disclaimer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="scrollbar" aria-hidden="true"><span class="scrollbar__fill" id="scrollFill"></span></div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Oak & Pixel Home">
+        <img class="brand__logo" src="assets/logo-primary.png" alt="Oak & Pixel"
+             onerror="this.style.display='none'; document.getElementById('brandText').style.display='block';">
+        <span id="brandText" class="brand__text" style="display:none;">OAK &amp; PIXEL</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+
+        <div class="nav__panel" id="navPanel">
+          <a class="nav__link" href="index.html#services">Services</a>
+          <a class="nav__link" href="index.html#process">Process</a>
+          <a class="nav__link" href="index.html#work">Work</a>
+          <a class="nav__link" href="index.html#contact">Contact</a>
+          <a class="btn btn--primary" href="index.html#contact">Request a consult</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section--light">
+    <section class="policyHero">
+      <div class="container">
+        <p class="kicker">Legal</p>
+        <h1 class="headline">Website Disclaimer</h1>
+        <div class="policyMeta">
+          <span>General disclaimer</span>
+          <span class="goldLineInline" aria-hidden="true"></span>
+          <span>Effective: <strong>[Insert Date]</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container policyWrap">
+      <aside class="policyToc" aria-label="Page contents">
+        <div class="tocTitle">On this page</div>
+        <a href="#advice">1. No professional advice</a>
+        <a href="#liability">2. Limitation of liability</a>
+        <a href="#links">3. External links</a>
+        <a href="#results">4. Testimonials & results</a>
+        <a href="#availability">5. Availability</a>
+        <a href="#errors">6. Errors & omissions</a>
+        <a href="#law">7. Governing law</a>
+        <a href="#contact">8. Contact</a>
+      </aside>
+
+      <article class="policyCard">
+        <p>
+          The information on this website is provided for general informational purposes only. While we provide content in good faith,
+          Oak &amp; Pixel makes no warranties regarding accuracy, completeness, or reliability.
+        </p>
+
+        <h2 id="advice">1. No professional advice</h2>
+        <p>This website does not provide legal, financial, technical, or professional advice. Obtain professional guidance as appropriate.</p>
+
+        <h2 id="liability">2. Limitation of liability</h2>
+        <p>Oak &amp; Pixel will not be liable for any loss or damage arising from use of the website or reliance on its content. Use is at your own risk.</p>
+
+        <h2 id="links">3. External links</h2>
+        <p>Links to third-party websites may be provided for convenience. We do not control third-party content and are not responsible for it.</p>
+
+        <h2 id="results">4. Testimonials &amp; results</h2>
+        <p>Testimonials and examples are illustrative only and do not guarantee future outcomes.</p>
+
+        <h2 id="availability">5. Availability</h2>
+        <p>We do not guarantee uninterrupted, secure, or error-free availability. We may modify or discontinue the site without notice.</p>
+
+        <h2 id="errors">6. Errors &amp; omissions</h2>
+        <p>We attempt to keep information accurate, but errors may occur. We may correct errors without notice.</p>
+
+        <h2 id="law">7. Governing law</h2>
+        <p>This Disclaimer is governed by the laws of the Republic of South Africa.</p>
+
+        <h2 id="contact">8. Contact</h2>
+        <p>
+          Email: <strong>[Insert Email Address]</strong><br />
+          Phone: <strong>[Insert Contact Number]</strong><br />
+          Address: <strong>[Insert Registered Address]</strong>
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer section--dark">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logoRow">
+          <img src="assets/logo-mark.png" alt="Oak & Pixel mark" class="footer__mark"
+               onerror="this.outerHTML='<span class=&quot;footer__markFallback&quot;>OP</span>';">
+          <div>
+            <div class="footer__name">Oak &amp; Pixel</div>
+            <div class="footer__tag">Boutique Digital Advisory</div>
+          </div>
+        </div>
+        <p class="footer__line">Structured Digital Foundations.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+
+      <div class="footer__legal">
+        <div class="footer__legalTitle">Legal</div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="cookies.html">Cookie Policy</a>
+        <a href="disclaimer.html">Website Disclaimer</a>
+      </div>
+
+      <div class="footer__meta">
+        <span>© <span id="year"></span> Oak &amp; Pixel</span>
+        <span class="goldLine" aria-hidden="true"></span>
+        <span>Johannesburg, South Africa</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

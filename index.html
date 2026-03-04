@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oak & Pixel — Boutique Digital Advisory</title>
+  <meta name="description" content="Oak & Pixel — Boutique Digital Advisory. Structured Digital Foundations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Elegant editorial: modern serif + clean sans -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Top progress line (subtle) -->
+  <div class="scrollbar" aria-hidden="true"><span class="scrollbar__fill" id="scrollFill"></span></div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Oak & Pixel Home">
+        <img class="brand__logo" src="assets/logo-primary.png" alt="Oak & Pixel" onerror="this.style.display='none'; document.getElementById('brandText').style.display='block';">
+        <span id="brandText" class="brand__text" style="display:none;">OAK &amp; PIXEL</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+
+        <div class="nav__panel" id="navPanel">
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#process">Process</a>
+          <a class="nav__link" href="#work">Work</a>
+          <a class="nav__link" href="#faq">FAQ</a>
+          <a class="nav__link" href="#contact">Contact</a>
+          <a class="btn btn--primary" href="#contact">Request a consult</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO (off-white) -->
+    <section class="section hero section--light" aria-label="Hero">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="kicker">Boutique Digital Advisory</p>
+          <h1 class="headline">
+            Structured Digital Foundations
+            <span class="headline__sub">for modern businesses that want to be taken seriously.</span>
+          </h1>
+          <p class="lead">
+            We combine strategy, design discipline, and technical clarity to craft calm, premium digital presence —
+            built to last, not built to shout.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact">Start a project</a>
+            <a class="btn btn--ghost" href="#work">View work</a>
+          </div>
+
+          <div class="hero__trust">
+            <span class="dot"></span><span>Structured delivery</span>
+            <span class="dot"></span><span>POPIA-ready approach</span>
+            <span class="dot"></span><span>Premium documentation</span>
+          </div>
+        </div>
+
+        <div class="hero__media reveal">
+          <div class="mediaStack">
+            <figure class="mediaStack__card">
+              <img src="assets/hero-1.jpg" alt="Editorial workspace" />
+            </figure>
+            <figure class="mediaStack__card mediaStack__card--offset">
+              <img src="assets/hero-2.jpg" alt="Architecture detail" />
+            </figure>
+            <div class="mediaStack__stamp" aria-hidden="true">
+              <img src="assets/logo-mark.png" alt="" onerror="this.outerHTML='<span class=&quot;stampFallback&quot;>OP</span>';">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (forest) -->
+   <section id="services" class="section">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Services</p>
+      <h2>Structured Digital Foundations for professional firms</h2>
+      <p class="lead">
+        We build, stabilise, and maintain the digital infrastructure your business relies on — quietly, consistently, and professionally.
+      </p>
+    </header>
+
+    <div class="grid grid-3">
+      <!-- Anchor / Premium -->
+      <article class="card card--featured">
+        <div class="card-top">
+          <h3>Digital Operations Partner</h3>
+          <p class="muted">End-to-end rebuild for businesses that want a clean, premium digital presence.</p>
+        </div>
+
+        <div class="price">
+          <span class="price-amount">Projects from</span>
+          <span class="price-figure">R20 000</span>
+        </div>
+
+        <ul class="list">
+          <li>Automation Improvements</li>
+          <li>Lead Funnel Optimisation</li>
+          <li>Conversion Improvements</li>
+          <li>Monthly Strategic Call</li>
+          <li>Business Digital Advisory</li>
+        </ul>
+
+        <div class="card-actions">
+          <a class="btn btn-primary" href="#contact">Enquire</a>
+          <a class="btn btn-ghost" href="#enhancements">See enhancements</a>
+        </div>
+      </article>
+
+      <!-- Core -->
+      <article class="card">
+        <div class="card-top">
+          <h3>Digital Care Plan</h3>
+          <p class="muted">Reliable digital infrastructure management</p>
+        </div>
+
+        <div class="price">
+          <span class="price-amount">Starting from</span>
+          <span class="price-figure">R3 000</span>
+          <span class="price-suffix">/ month</span>
+        </div>
+
+        <ul class="list">
+          <li>Website Monitoring</li>
+          <li>Security Updates</li>
+          <li>Minor Hosting Management</li>
+          <li>Monthly Backups</li>
+          <li>WhatsApp Automation Adjustments</li>
+        </ul>
+
+        <div class="card-actions">
+          <a class="btn btn-primary" href="#contact">Enquire</a>
+          <a class="btn btn-ghost" href="#enhancements">Optional enhancements</a>
+        </div>
+      </article>
+
+      <!-- Higher tier -->
+      <article class="card">
+  <div class="card-top">
+    <div class="title-row">
+      <h3>Digital Growth Plan</h3>
+      <span class="badge badge--gold" aria-label="Most Popular">Most Popular</span>
+    </div>
+    <p class="muted">For businesses that want performance improvement, visibility, and reporting.</p>
+  </div>
+
+  <div class="price">
+    <span class="price-amount">Starting from</span>
+    <span class="price-figure">R4 500</span>
+    <span class="price-suffix">/ month</span>
+  </div>
+
+  <ul class="list">
+    <li>Everything in Digital Care Plan</li>
+    <li>Google Business Optimisation</li>
+    <li>Website Improvements</li>
+    <li>Landing Page Updates</li>
+    <li>Lead Tracking Reports</li>
+  </ul>
+<p class="muted"></p>
+
+  <div class="card-actions">
+    <a class="btn btn-primary" href="#contact">Enquire</a>
+    <a class="btn btn-ghost" href="#enhancements">Optional enhancements</a>
+  </div>
+</article>
+    </div>
+
+    <div class="note">
+      <p>
+        <strong>Pricing is indicative.</strong> Final pricing depends on complexity, current state, and turnaround requirements.
+        We keep client rosters intentionally small.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="enhancements" class="section section--soft">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Optional Enhancements</p>
+      <h2>Extend your foundation when needed</h2>
+      <p class="lead">
+        Add enhancements as your business grows — without bloating the core retainer.
+        Pricing is confirmed after a quick review.
+      </p>
+    </header>
+
+    <div class="grid grid-3">
+      <article class="card">
+        <h3>Business Document Pack</h3>
+        <p class="muted">Invoice, quote, proposal and service agreement templates — branded and consistent.</p>
+        <p class="pill">From R3 000</p>
+      </article>
+
+      <article class="card">
+        <h3>Client Welcome Kit</h3>
+        <p class="muted">A premium onboarding PDF that explains how Oak & Pixel works (process + expectations).</p>
+        <p class="pill">From R2 500</p>
+      </article>
+
+      <article class="card">
+        <h3>Google Business Optimisation</h3>
+        <p class="muted">Profile refinement, categories, services, posts, and trust signals to improve discovery.</p>
+        <p class="pill">From R2 500</p>
+      </article>
+
+      <article class="card">
+        <h3>Landing Page Build</h3>
+        <p class="muted">Conversion-first landing page for a specific service or campaign.</p>
+        <p class="pill">From R3 000</p>
+      </article>
+
+      <article class="card">
+        <h3>Analytics & Tracking Setup</h3>
+        <p class="muted">Clean measurement: events, goals, dashboards (GA4 / equivalents).</p>
+        <p class="pill">From R2 000</p>
+      </article>
+
+      <article class="card">
+        <h3>Online Booking Integration</h3>
+        <p class="muted">Integrate booking tools so enquiries become appointments.</p>
+        <p class="pill">From R2 500</p>
+      </article>
+    </div>
+
+    <div class="cta-row">
+      <div class="cta-box">
+        <h3>Not sure what you need?</h3>
+        <p class="muted">Request a quick Digital Foundation Review and we’ll recommend the right path.</p>
+      </div>
+      <a class="btn btn-primary" href="#contact">Request a review</a>
+    </div>
+  </div>
+</section>
+<section id="framework" class="section framework">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Our Method</p>
+      <h2>The Digital Foundation Framework</h2>
+      <p class="lead">
+        A structured approach to building and maintaining reliable digital infrastructure for professional firms.
+        Calm, stable, and designed to scale.
+      </p>
+    </header>
+
+    <div class="grid grid-2">
+      <article class="card">
+        <h3>1. Structure</h3>
+        <p class="muted">
+          Domain, hosting, and site architecture — set up correctly to avoid instability later.
+        </p>
+        <ul class="list">
+          <li>Domain + DNS structure</li>
+          <li>Hosting configuration</li>
+          <li>Core site architecture</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>2. Presence</h3>
+        <p class="muted">
+          Ensure your business is discoverable and presented professionally across key touchpoints.
+        </p>
+        <ul class="list">
+          <li>Website clarity + hierarchy</li>
+          <li>Google presence basics</li>
+          <li>Trust signals + credibility</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>3. Performance</h3>
+        <p class="muted">
+          Speed, reliability, and stability — the foundations of a premium digital experience.
+        </p>
+        <ul class="list">
+          <li>Mobile optimisation</li>
+          <li>Speed improvements</li>
+          <li>Uptime monitoring</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>4. Conversion</h3>
+        <p class="muted">
+          Make it easy for the right clients to contact you, enquire, and take the next step.
+        </p>
+        <ul class="list">
+          <li>Contact + enquiry flow</li>
+          <li>Booking / lead capture</li>
+          <li>Clear calls-to-action</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>5. Governance</h3>
+        <p class="muted">
+          Ongoing upkeep that keeps your digital environment secure, current, and consistent.
+        </p>
+        <ul class="list">
+          <li>Security updates</li>
+          <li>Content maintenance</li>
+          <li>Change control</li>
+        </ul>
+      </article>
+
+      <article class="card card--featured">
+        <h3>Outcome</h3>
+        <p class="muted">
+          A professional digital foundation that runs quietly in the background — so your business can focus on clients.
+        </p>
+
+        <div class="cta-row">
+          <div class="cta-box">
+            <h3>Want a quick review?</h3>
+            <p class="muted">
+              Request a Digital Foundation Review and we’ll highlight practical improvements.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="#contact">Request a review</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- PROCESS (off-white) -->
+    <section class="section section--light" id="process" aria-label="Process">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">Process</p>
+          <h2 class="h2">Structured delivery. Minimal friction.</h2>
+          <p class="sub">
+            We run projects like a firm — clear stages, clean documentation, and decisive execution.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="step reveal">
+            <span class="step__num">01</span>
+            <div class="step__body">
+              <h3 class="h3">Discovery</h3>
+              <p class="muted">We align on business intent, positioning, and what “premium” must mean for your market.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <span class="step__num">02</span>
+            <div class="step__body">
+              <h3 class="h3">Structure</h3>
+              <p class="muted">Sitemap, content map, page hierarchy, and conversion flow — designed before visuals.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <span class="step__num">03</span>
+            <div class="step__body">
+              <h3 class="h3">Design</h3>
+              <p class="muted">Editorial layout, typography discipline, balanced palettes — quietly dominant presence.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <span class="step__num">04</span>
+            <div class="step__body">
+              <h3 class="h3">Build & Launch</h3>
+              <p class="muted">Clean implementation, performance basics, analytics, and a structured handover.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK (forest) -->
+    <section class="section section--dark" id="work" aria-label="Work">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker kicker--light">Selected work</p>
+          <h2 class="h2 h2--light">Editorial design with business intent.</h2>
+          <p class="sub sub--light">Replace the images with your own projects.</p>
+        </div>
+
+        <div class="gallery">
+          <a class="workCard reveal" href="#contact">
+            <img src="assets/work-1.jpg" alt="Project preview" />
+            <div class="workCard__meta">
+              <span class="workCard__title">Private Practice</span>
+              <span class="workCard__tag">Website + structure</span>
+            </div>
+          </a>
+
+          <a class="workCard reveal" href="#contact">
+            <img src="assets/work-2.jpg" alt="Project preview" />
+            <div class="workCard__meta">
+              <span class="workCard__title">Boutique Firm</span>
+              <span class="workCard__tag">Brand + foundation</span>
+            </div>
+          </a>
+
+          <a class="workCard reveal" href="#contact">
+            <img src="assets/work-3.jpg" alt="Project preview" />
+            <div class="workCard__meta">
+              <span class="workCard__title">Consultancy</span>
+              <span class="workCard__tag">Care + optimisation</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS (off-white) -->
+    <section class="section section--light" aria-label="Testimonials">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">Client notes</p>
+          <h2 class="h2">Calm execution. Premium outcomes.</h2>
+        </div>
+
+        <div class="quotes">
+          <blockquote class="quote reveal">
+            <p>“Everything felt structured and intentional. The final site looks established — exactly what we needed.”</p>
+            <footer>— Client, Professional Services</footer>
+          </blockquote>
+
+          <blockquote class="quote reveal">
+            <p>“The process was clear. The design feels premium, not trendy. The handover was clean.”</p>
+            <footer>— Client, Healthcare</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (forest) -->
+    <section class="section section--dark" id="faq" aria-label="FAQ">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker kicker--light">FAQ</p>
+          <h2 class="h2 h2--light">A few answers upfront.</h2>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item reveal">
+            <summary>Do you provide copywriting?</summary>
+            <p>Yes — we can refine your existing copy or produce structured copy blocks as an add-on. We keep it calm and conversion-led.</p>
+          </details>
+
+          <details class="faq__item reveal">
+            <summary>Can you maintain the site after launch?</summary>
+            <p>Yes — our retainers cover security, updates, content changes, performance checks, and advisory support.</p>
+          </details>
+
+          <details class="faq__item reveal">
+            <summary>How do you keep the site feeling “premium”?</summary>
+            <p>Typography discipline, white space, structured sections, restrained accent use, and editorial photography.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (off-white) -->
+    <section class="section section--light" id="contact" aria-label="Contact">
+      <div class="container contact">
+        <div class="contact__left reveal">
+          <p class="kicker">Consultation Request</p>
+          <h2 class="h2">Request a Digital Foundation Review.</h2>
+          <p class="sub">
+            If you're considering improving your digital infrastructure, we would be
+        happy to review your current setup and suggest practical improvements.
+          </p>
+	      <p class="contact-note">
+        We intentionally work with a small number of businesses to ensure quality
+        support for each client.
+    	  </p>
+
+          <div class="contact__details">
+            <div class="detail"><span class="label">Email</span> <span class="value">hello@oakandpixel.co.za</span></div>
+            <div class="detail"><span class="label">Location</span> <span class="value">Johannesburg, South Africa</span></div>
+          </div>
+<div class="map-container">
+<h4>Location</h4>
+<iframe
+  src="https://www.google.com/maps?q=Sandton&output=embed"
+  width="100%"
+  height="300"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+
+</div>
+        </div>
+
+        <form class="form reveal" id="contactForm" action="https://formspree.io/f/xjgenzjd" method="POST">
+          <div class="form__row">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" required placeholder="Your name" />
+	            <input type="hidden" name="_subject" value="Oak & Pixel — New Website Enquiry" />
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
+            </label>
+          </div>
+
+          <label>
+            <span>Business</span>
+            <input name="business" type="text" required placeholder="Business name" />
+          </label>
+
+          <label>
+            <span>What do you need?</span>
+            <select name="need" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Digital Foundation</option>
+              <option>Foundation Plus</option>
+              <option>Digital Care Retainer</option>
+              <option>All-in-One Digital Care</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required placeholder="Tell us what you want your website to communicate..."></textarea>
+          </label>
+
+          <div class="form__foot">
+            <button class="btn btn--primary" type="submit">Submit</button>
+            <p class="fineprint">By submitting, you agree to our privacy policy.</p>
+          </div>
+	  
+
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+	        <p class="form-trust">
+	          We typically respond within one business day. Your information will never be shared.
+	        </p>
+
+	        <h4>Prefer WhatsApp?</h4>
+	        <p class="muted">Send us a quick message.</p>
+
+	        <a href="https://wa.me/27750890614?text=Hi%20Oak%20%26%20Pixel%2C%20I%20would%20like%20to%20request%20a%20Digital%20Foundation%20Review."
+  	      target="_blank" rel="noopener noreferrer" class="btn-whatsapp">Chat on WhatsApp</a>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+ <footer class="footer section--dark">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <div class="footer__logoRow">
+        <img src="assets/logo-mark.png" alt="Oak & Pixel mark" class="footer__mark"
+             onerror="this.outerHTML='<span class=&quot;footer__markFallback&quot;>OP</span>';">
+        <div>
+          <div class="footer__name">Oak &amp; Pixel</div>
+          <div class="footer__tag">Boutique Digital Advisory</div>
+        </div>
+      </div>
+      <p class="footer__line">Structured Digital Foundations.</p>
+    </div>
+
+    <div class="footer__links">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- NEW: Legal links -->
+    <div class="footer__legal">
+      <div class="footer__legalTitle">Legal</div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="cookies.html">Cookie Policy</a>
+      <a href="disclaimer.html">Website Disclaimer</a>
+    </div>
+
+    <div class="footer__meta">
+      <span>© <span id="year"></span> Oak &amp; Pixel</span>
+      <span class="goldLine" aria-hidden="true"></span>
+      <span>Johannesburg, South Africa</span>
+    </div>
+  </div>
+</footer>
+ 
+  <script src="js/main.js"></script>
+ <a
+  href="https://wa.me/27750890614?text=Hi%20Oak%20%26%20Pixel%2C%20I%27d%20like%20a%20Digital%20Foundation%20Review."
+  class="wa-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat to Oak & Pixel on WhatsApp">
+  <span class="wa-icon" aria-hidden="true">WhatsApp</span>
+  </a>
+</body>
+</html>
