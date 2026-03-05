@@ -885,4 +885,54 @@ transition:all .25s ease;
 background:#1ebe5d;
 transform:translateY(-1px);
 box-shadow:0 8px 20px rgba(0,0,0,0.12);
+
 }
+
+<style>
+  .opx-included-photoshoot{
+    margin-top: 18px;
+    padding: 18px 18px 16px;
+    border: 1px solid rgba(198,167,94,.35);
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(12,47,37,.05), rgba(247,249,248,.9));
+  }
+  .opx-badge{
+    display:inline-block;
+    font-size: 12px;
+    letter-spacing:.08em;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(198,167,94,.18);
+    border: 1px solid rgba(198,167,94,.35);
+    color: #141716;
+    margin-bottom: 12px;
+  }
+  .opx-title-row{display:flex; gap:10px; align-items:baseline; flex-wrap:wrap;}
+  .opx-title{
+    font-weight: 700;
+    font-size: 16px;
+    color: #0C2F25;
+  }
+  .opx-subtitle{
+    font-size: 13px;
+    color: rgba(20,23,22,.75);
+  }
+  .opx-desc{
+    margin: 10px 0 12px;
+    color: rgba(20,23,22,.85);
+    line-height: 1.55;
+  }
+  .opx-list{
+    margin: 0 0 12px;
+    padding-left: 18px;
+    color: rgba(20,23,22,.85);
+    line-height: 1.65;
+  }
+  .opx-note{
+    font-size: 12px;
+    color: rgba(20,23,22,.7);
+    border-top: 1px solid rgba(12,47,37,.12);
+    padding-top: 10px;
+  }
+</style>
