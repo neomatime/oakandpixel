@@ -532,60 +532,102 @@
         </div>
 
         <form class="form reveal" id="contactForm" action="/thank-you" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-			<p style="display:none">
-			<label>Don't fill this out: <input name="bot-field"></label>
-			</p>
-          <div class="form__row">
-            <label>
-              <span>Name</span>
-			  <input type="hidden" name="form-name" value="contact">
-              <input name="name" type="text" autocomplete="name" required placeholder="Your name" />
-	            <input type="hidden" name="_subject" value="Oak & Pixel — New Website Enquiry" />
-              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-            </label>
-            <label>
-              <span>Email</span>
-              <input name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
-            </label>
-          </div>
+			<section class="opx-contact" id="contact">
+  <div class="opx-contact__wrap">
+    <div class="opx-contact__header">
+      <p class="opx-kicker">Oak & Pixel</p>
+      <h2 class="opx-title">Send an enquiry</h2>
+      <p class="opx-subtitle">
+        Share what you need and we’ll respond within 1 business day.
+        Prefer WhatsApp? Tap the button below.
+      </p>
 
-          <label>
-            <span>Business</span>
-            <input name="business" type="text" required placeholder="Business name" />
+      <div class="opx-actions">
+        <!-- Replace number with your business WhatsApp number (international format, no +) -->
+        <a class="opx-btn opx-btn--whatsapp"
+           href="https://wa.me/27750890614?text=Hi%20Oak%20%26%20Pixel%2C%20I%27d%20like%20to%20enquire%20about%20a%20website."
+           target="_blank" rel="noopener">
+          WhatsApp Oak & Pixel
+        </a>
+
+        <a class="opx-btn opx-btn--outline" href="mailto:info@oakandpixel.co.za">
+          Email: info@oakandpixel.co.za
+        </a>
+      </div>
+    </div>
+
+    <!-- Netlify Form -->
+    <form class="opx-form"
+          name="oakandpixel-enquiry"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/thank-you.html">
+
+      <!-- Required hidden field (must match the form name exactly) -->
+      <input type="hidden" name="form-name" value="oakandpixel-enquiry">
+
+      <!-- Honeypot (spam trap) -->
+      <p class="opx-hidden">
+        <label>Don’t fill this out: <input name="bot-field"></label>
+      </p>
+
+      <div class="opx-grid">
+        <div class="opx-field">
+          <label for="opx-name">Full name</label>
+          <input id="opx-name" name="name" type="text" placeholder="Your name" required>
+        </div>
+
+        <div class="opx-field">
+          <label for="opx-email">Email</label>
+          <input id="opx-email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="opx-field">
+          <label for="opx-phone">Phone (optional)</label>
+          <input id="opx-phone" name="phone" type="tel" placeholder="07X XXX XXXX">
+        </div>
+
+        <div class="opx-field">
+          <label for="opx-service">Service</label>
+          <select id="opx-service" name="service" required>
+            <option value="" selected disabled>Select a service</option>
+            <option>Digital Foundation (Setup)</option>
+            <option>Digital Care Plan</option>
+            <option>Digital Growth Plan</option>
+            <option>Digital Operations Partner</option>
+            <option>Other / Not sure</option>
+          </select>
+        </div>
+
+        <div class="opx-field opx-field--full">
+          <label for="opx-message">Project details</label>
+          <textarea id="opx-message"
+                    name="message"
+                    placeholder="Tell us about your business and what you want to build…"
+                    rows="6"
+                    required></textarea>
+        </div>
+
+        <div class="opx-field opx-field--full opx-consent">
+          <label class="opx-check">
+            <input type="checkbox" name="consent" required>
+            <span>I consent to Oak & Pixel contacting me about this enquiry.</span>
           </label>
+        </div>
 
-          <label>
-            <span>What do you need?</span>
-            <select name="need" required>
-              <option value="" selected disabled>Select one</option>
-              <option>Digital Care Plan</option>
-              <option>Digital Growth Plan</option>
-              <option>Digital Operations Partner</option>
-              <option>Digital Advisor Session</option>
-            </select>
-          </label>
-
-          <label>
-            <span>Message</span>
-            <textarea name="message" rows="5" required placeholder="Tell us what you want your website to communicate..."></textarea>
-          </label>
-
-          <div class="form__foot">
-            <button class="btn btn--primary" type="submit">Submit</button>
-            <p class="fineprint">By submitting, you agree to our privacy policy.</p>
-          </div>
-	  
-
-          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-	        <p class="form-trust">
-	          We typically respond within one business day. Your information will never be shared.
-	        </p>
-
-	        <h4>Prefer WhatsApp?</h4>
-	        <p class="muted">Send us a quick message.</p>
-
-	        <a href="https://wa.me/27750890614?text=Hi%20Oak%20%26%20Pixel%2C%20I%20would%20like%20to%20request%20a%20Digital%20Foundation%20Review."
-  	      target="_blank" rel="noopener noreferrer" class="btn-whatsapp">Chat on WhatsApp</a>
+        <div class="opx-field opx-field--full opx-submit-row">
+          <button class="opx-submit" type="submit">
+            Send enquiry
+          </button>
+          <p class="opx-small">
+            By submitting, your enquiry is securely received. We never sell your information.
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
 
         </form>
       </div>
@@ -642,6 +684,7 @@
 </body>
 
 </html>
+
 
 
 
