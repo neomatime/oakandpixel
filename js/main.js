@@ -94,12 +94,13 @@
         status.style.color = "#1F3A2E";
         form.reset();
       } else {
-        status.textContent = "Something went wrong. Please email hello@oakandpixel.co.za.";
+        status.textContent = "Something went wrong. Please email info@oakandpixel.co.za.";
         status.style.color = "#2B2E2C";
       }
     } catch {
-      status.textContent = "Network error. Please email hello@oakandpixel.co.za.";
+      status.textContent = "Network error. Please email info@oakandpixel.co.za.";
       status.style.color = "#2B2E2C";
     }
   });
+
 })();
